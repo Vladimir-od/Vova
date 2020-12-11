@@ -1,0 +1,13 @@
+#app{
+    display: flex;
+    flex-direction: column;
+    
+}
+.user {
+    display: flex;
+     flex-grow: 2;
+    width: 100%;
+    border-style: ridge;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
