@@ -8,7 +8,7 @@ app.use(express.static("public"));
 
 app.set("view engine", "hbs");
 
-app.use(function (request, response) {
+app.get("/", function (request, response) {
   req("https://reqres.in/api/users?page=2", (err, res, body) => {
     let contacts = JSON.parse(body);
     const html = contacts.data
